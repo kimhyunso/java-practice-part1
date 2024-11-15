@@ -1,3 +1,5 @@
+package chapter08;
+
 import java.util.Scanner;
 
 public class Main {
