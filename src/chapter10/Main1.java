@@ -2,7 +2,7 @@ package chapter10;
 
 import java.util.Scanner;
 
-public class Main4 {
+public class Main1 {
     public static void main(String[] args) {
 
         int data = 0x11223344;
