@@ -22,5 +22,25 @@ public class Main2 {
             System.out.println("성인 요금: " + result);
         }
 
+
+
+
+        if (age > 14) {
+            if (age <= 19) {
+                result = (int) (result * 0.75);
+                System.out.println("청소년 요금: " + result);
+            } else {
+                System.out.println("성인 요금: " + result);
+            }
+        } else {
+            if (age >= 0 && age <= 3) {
+                result = 0;
+                System.out.println("영유아 요금: " + result);
+            } else {
+                result = (int) (result * 0.5);
+                System.out.println("어린이 요금: " + result);
+            }
+        }
+
     }
 }
