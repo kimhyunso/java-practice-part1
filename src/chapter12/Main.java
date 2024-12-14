@@ -1,7 +1,7 @@
-package chapter11;
+package chapter12;
 
 
-public class Main4 {
+public class Main {
     public static void main(String[] args) {
         for (int i = 0; i < 5; i++) {
             for (int j = 0; j <= i; j++) {
