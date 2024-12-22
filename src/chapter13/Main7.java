@@ -3,25 +3,49 @@ package chapter13;
 public class Main7 {
     public static void main(String[] args) {
         int [][] numbers = new int[5][5];
-        int count = 0;
+//        int length = 9;
+        int x = -1, y = 0, cnt = 0;
+        int direction = 1;
+//        boolean flag = true;
 
-        // 7
+//        for (int length = 9; length > 0; length -= 2) {
+//            if (flag) {
+//                for (int i = 0; i < length; i++) {
+//                    if (i < length / 2 + 1)
+//                        ++x;
+//                    else
+//                        ++y;
+//
+//                    numbers[y][x] = ++cnt;
+//                }
+//            } else {
+//                for (int i = 0; i < length; i++) {
+//                    if (i < length / 2 + 1)
+//                        --x;
+//                    else
+//                        --y;
+//
+//                    numbers[y][x] = ++cnt;
+//                }
+//            }
+//            flag = !flag;
+//        }
 
-        for (int i = 0; i < 9; i++) {
-            if (i > 4) {
-                for (int j = 4; j <= 4; j++) {
-                    numbers[i - j][j] = ++count;
-                }
-            } else {
-                for (int j = 0; j <= 0; j++) {
-                    numbers[j][i] = ++count;
-                }
+        for (int length = 9; length > 0; length -= 2) {
+            for (int i = 0; i < length; i++) {
+                if (i < length / 2 + 1)
+                    x += direction;
+                else
+                    y += direction;
+
+                numbers[y][x] = ++cnt;
             }
+            direction = -direction;
         }
 
         for (int i = 0; i < numbers.length; i++) {
-            for (int j = 0; j < numbers[0].length; j++) {
-                System.out.print(numbers[i][j] + "\t");
+            for (int r = 0; r < numbers[0].length; r++) {
+                System.out.print(numbers[i][r] + "\t");
             }
             System.out.println();
         }
