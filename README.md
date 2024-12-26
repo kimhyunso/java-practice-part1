@@ -8,6 +8,7 @@
 5. Bubble Sort, Selection Sort
 6. Shallow Copy, Deep Copy
 7. 항, 식, 구문
+8. Call Stack
 
 ## Lookup 배열
 경우의 수가 많아 질 경우 배열을 선언하여 하나의 값을 찾도록 만드는 것
@@ -37,3 +38,7 @@ Deep Copy는 참조자들이 해당 인스턴스를 참조할 때, 다른 힙 �
 항들이 모여 식이되고 식이 모여 구문이됨
 
 x, y (항들) x + y (식) {x + y, x - y}
+
+## Call Stack
+함수를 호출할 때 stack의 구조를 따라 먼저 들어간 함수가 나중에 호출된다(FILO)
+
