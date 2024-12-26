@@ -7,7 +7,7 @@
 4. Recursive Call
 5. Bubble Sort, Selection Sort
 6. Shallow Copy, Deep Copy
-7. 항, 식, 구문
+7. 항 -> 식 -> 구문 -> 메소드
 8. Call Stack
 
 ## Lookup 배열
@@ -35,9 +35,11 @@ primitive type을 함수의 파라미터로 전달 후, 파라미터의 값을 �
 Deep Copy는 참조자들이 해당 인스턴스를 참조할 때, 다른 힙 영역을 참조하게 만듬
 
 ## 항, 식, 구문
-항들이 모여 식이되고 식이 모여 구문이됨
+항들이 모여 식이되고 식이 모여 구문이됨 구문이 모여 함수가 됨
 
 x, y (항들) x + y (식) {x + y, x - y}
+
+func() -> {x + y, x - y}
 
 ## Call Stack
 함수를 호출할 때 stack의 구조를 따라 먼저 들어간 함수가 나중에 호출된다(FILO)
